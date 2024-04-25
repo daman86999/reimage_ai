@@ -1,12 +1,17 @@
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const IBM_Plex = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-ibm-plex",
+});
 
 export const metadata: Metadata = {
   title: "Re-image.ai",
-  description: "Ai powered image generator and formatter",
+  description: "AI powered image generator and formatter.",
 };
 
 export default function RootLayout({
@@ -16,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn("font-IBM_PLex antialiased", IBM_Plex.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
