@@ -62,7 +62,10 @@ const Sidebar = () => {
                         : "text-gray-700"
                     }`}
                   >
-                    <Link href={link.route} className="sidebar-link">
+                    <Link
+                      href={link.route}
+                      className="sidebar-link cursor-pointer"
+                    >
                       <Image
                         src={link.icon}
                         alt="log"

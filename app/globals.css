@@ -155,6 +155,19 @@
     @apply font-normal text-[16px] leading-[140%];
   }
 
+  /* 15 */
+  .p-15-semibold {
+    @apply font-semibold text-[15px] leading-[140%];
+  }
+
+  .p-15-medium {
+    @apply font-medium text-[15px] leading-[140%];
+  }
+
+  .p-15-regular {
+    @apply font-normal text-[15px] leading-[140%];
+  }
+
   /* 14 */
   .p-14-medium {
     @apply font-medium text-[14px] leading-[120%];
@@ -328,11 +341,11 @@
   }
 
   .sidebar-nav_element {
-    @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-full bg-cover  transition-all hover:bg-purple-100 hover:shadow-inner;
+    @apply flex-center p-15-semibold w-full whitespace-nowrap rounded-full bg-cover  transition-all hover:bg-purple-100 hover:shadow-inner;
   }
 
   .sidebar-link {
-    @apply p-16-semibold flex size-full gap-4 p-4;
+    @apply p-15-semibold flex size-full gap-4 p-3;
   }
 
   /* TransformationForm Component */
